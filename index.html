@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hollow Knight Interactive Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="map-container">
+      <img id="map" src="https://i.postimg.cc/90GfzYqL/map.webpmap.png" alt="Hollow Knight Map">
+
+      <!-- Regions -->
+      <div class="region" style="top: 10px; left: 80px; width: 150px; height: 80px;"
+           data-name="Howling Cliffs" data-info="Remote cliffs on the edge of Hallownest."></div>
+
+      <div class="region" style="top: 90px; left: 250px; width: 200px; height: 70px;"
+           data-name="Dirtmouth" data-info="A quiet, desolate town."></div>
+
+      <div class="region" style="top: 20px; left: 500px; width: 200px; height: 120px;"
+           data-name="Crystal Peak" data-info="Glittering mines full of infected miners."></div>
+
+      <div class="region" style="top: 150px; left: 520px; width: 160px; height: 70px;"
+           data-name="Resting Grounds" data-info="The burial place of Hallownest’s fallen."></div>
+
+      <div class="region" style="top: 100px; left: 50px; width: 200px; height: 120px;"
+           data-name="Greenpath" data-info="Lush, green caverns teeming with vegetation."></div>
+
+      <div class="region" style="top: 140px; left: 270px; width: 200px; height: 100px;"
+           data-name="Forgotten Crossroads" data-info="The central crossroads of Hallownest."></div>
+
+      <div class="region" style="top: 200px; left: 40px; width: 180px; height: 100px;"
+           data-name="Queen's Gardens" data-info="A royal sanctuary overrun by dangerous flora."></div>
+
+      <div class="region" style="top: 200px; left: 230px; width: 150px; height: 90px;"
+           data-name="Fog Canyon" data-info="Misty caverns with floating jellyfish."></div>
+
+      <div class="region" style="top: 220px; left: 390px; width: 150px; height: 110px;"
+           data-name="Fungal Wastes" data-info="Fungi-infested caverns with spores."></div>
+
+      <div class="region" style="top: 230px; left: 550px; width: 260px; height: 160px;"
+           data-name="City of Tears" data-info="A vast, rain-soaked capital."></div>
+
+      <div class="region" style="top: 250px; left: 830px; width: 180px; height: 120px;"
+           data-name="Kingdom's Edge" data-info="A remote cliffside region battered by rain."></div>
+
+      <div class="region" style="top: 400px; left: 60px; width: 300px; height: 200px;"
+           data-name="Deepnest" data-info="Dark, dangerous caverns filled with spiders."></div>
+
+      <div class="region" style="top: 400px; left: 370px; width: 250px; height: 120px;"
+           data-name="Royal Waterways" data-info="Flooded tunnels beneath the capital."></div>
+
+      <div class="region" style="top: 520px; left: 320px; width: 300px; height: 120px;"
+           data-name="Ancient Basin" data-info="A desolate, crumbling ruin deep underground."></div>
+
+      <div class="region" style="top: 430px; left: 650px; width: 200px; height: 120px;"
+           data-name="The Hive" data-info="Bee-like creatures’ golden hive."></div>
+    </div>
+
+    <!-- Hidden panel -->
+    <div id="info-panel">
+      <button id="close-panel">✖</button>
+      <h2 id="location-name">Click a region</h2>
+      <p id="location-info">Hover to see names, click to get details.</p>
+    </div>
+  </div>
+
+  <div id="tooltip"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

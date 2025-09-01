@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  overflow: hidden;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+#map-container {
+  position: relative;
+  flex: 1;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.region {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.region:hover {
+  border-color: yellow;
+  background-color: rgba(255, 255, 0, 0.15);
+}
+
+/* Info panel hidden by default */
+#info-panel {
+  position: absolute;
+  top: 0;
+  right: -350px; /* hidden off-screen */
+  width: 300px;
+  height: 100%;
+  background: #222;
+  padding: 20px;
+  border-left: 2px solid #444;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.5);
+  transition: right 0.3s ease;
+}
+
+
+#info-panel.active {
+  right: 0;
+}
+
+#info-panel h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #ffd700;
+}
+
+#close-panel {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  float: right;
+  cursor: pointer;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  pointer-events: none;
+  display: none;
+  z-index: 1000;
+}
